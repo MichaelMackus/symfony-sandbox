@@ -1,3 +1,7 @@
-{{ dump(result)}}
+{% extends 'TwigBundle::layout.html.twig' %}
 
-{{ form(form) }}
+{% block body %}
+    {{ dump(result)}}
+
+    {{ form(form) }}
+{% endblock %}
